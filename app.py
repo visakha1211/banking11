@@ -1,13 +1,24 @@
 # -------------- FULL APP  -----------------------------------------------
-#  EcoWise Insight Studio - 2025 (with advanced visuals)
+#  EcoWise Insight Studio – 2025 (with advanced visuals)
 #  Place banner_ecowise.png next to this file.  Requirements above.
 # -------------------------------------------------------------------------
-import streamlit as st, pandas as pd, numpy as np, matplotlib.pyplot as plt
-from pathlib import Path; from base64 import b64encode
+import streamlit as st
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+from pathlib import Path
+from base64 import b64encode
+import io, tempfile, json
 
 # === extra libs ===
-import plotly.express as px, plotly.graph_objects as go, scikitplot as skplt
-import shap, networkx as nx; from pyvis.network import Network
+import plotly.express as px          # one per line ✔
+import plotly.graph_objects as go    # one per line ✔
+import scikitplot as skplt           # one per line ✔
+import shap
+import networkx as nx
+from pyvis.network import Network
+
 import io, tempfile, os, json
 
 from sklearn.model_selection import train_test_split
