@@ -1,6 +1,12 @@
-streamlit==1.35.0
+streamlit>=1.35
 pandas>=2.0
 numpy>=1.25
-scikit-learn>=1.5
 matplotlib>=3.9
+scipy<2.0                 # scikit-plot needs scipy.interp
+plotly>=5.22              # install plotly (bundles plotly.express)
+scikit-plot>=0.3.7
+shap>=0.45
+networkx>=3.2
+pyvis>=0.3
 mlxtend>=0.23
+scikit-learn>=1.4
