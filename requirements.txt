@@ -3,7 +3,7 @@ pandas>=2.0
 numpy>=1.25
 matplotlib>=3.9
 scipy<2.0                 # scikit-plot needs scipy.interp
-plotly>=5.22              # install plotly (bundles plotly.express)
+plotly>=5.22              # <- THIS LINE is critical
 scikit-plot>=0.3.7
 shap>=0.45
 networkx>=3.2
